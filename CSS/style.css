@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+}
+
+html,
+body {
+  height: auto;
+  min-height: 100dvh;
+}
+html {
+  background: linear-gradient(180deg, #ea02ff 0%, #0097ff 100%);
+}
+
+input:focus {
+  outline: none;
+}
+#container-registro {
+  max-width: 900px;
+  min-height: 80dvh;
+  margin: 2rem auto;
+  display: flex;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+#banner-registro {
+  background-image: url("../ASSETS/bg-form.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+}
+
+#banner-layer {
+  background-color: rgba(25, 11, 122, 0.7);
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+#banner-registro h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+#form-registro {
+  background-color: #fdfdfd;
+  padding: 2rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+#form-registro h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+#form-registro p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #aaa;
+  font-size: 0.8rem;
+}
+.alinha-form {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.alinha-form label {
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+.alinha-form input {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  padding: 0.6rem 0;
+}
+#gerar-senha {
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+  user-select: none;
+}
+#gerar-senha:hover {
+  color: #0099ff;
+}
+#form-registro #gerador-senha {
+border: 1px solid #0099ff;
+border-radius: 4px;
+font-weight: bold;
+font-size: 1.2rem;
+padding: .4rem;
+color: #333;
+margin-bottom: 1rem;
+display: none;
+}
+
+#form-registro #gerador-senha p {
+  color: #81d340;
+  margin-bottom: .5rem;
+}
+#form-registro #gerador-senha h4{
+ margin-bottom: .5rem;
+  text-align: center;
+}
+
+
+#form-registro  input[type="submit"]{
+  background-color: #81d340 ;
+  color: #fff;
+  opacity: .8;
+  border: none;
+  border-radius: 2rem ;
+  padding: 1rem 1.4rem;
+  max-width: 150px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: .4s;
+}
+#form-registro  input[type="submit"]:hover{
+  opacity: 1;
+}
