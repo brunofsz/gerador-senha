@@ -32,4 +32,4 @@ Este é um projeto simples de um **Gerador de Senhas** desenvolvido com **HTML, 
 
 ## 📸 Preview
 
-![Preview](Assets/Preview.png)
+![Preview](ASSETS/Preview.png)
