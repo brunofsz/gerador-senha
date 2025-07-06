@@ -78,13 +78,13 @@ input:focus {
   border-bottom: 1px solid #aaa;
   padding: 0.6rem 0;
 }
-#gerar-senha {
+#abrir-gerar-senha {
   font-weight: bold;
   cursor: pointer;
   transition: 0.4s;
   user-select: none;
 }
-#gerar-senha:hover {
+#abrir-gerar-senha:hover {
   color: #0099ff;
 }
 #form-registro #gerador-senha {
@@ -95,6 +95,7 @@ font-size: 1.2rem;
 padding: .4rem;
 color: #333;
 margin-bottom: 1rem;
+text-align: center;
 display: none;
 }
 
@@ -104,11 +105,12 @@ display: none;
 }
 #form-registro #gerador-senha h4{
  margin-bottom: .5rem;
-  text-align: center;
 }
 
 
-#form-registro  input[type="submit"]{
+#form-registro  input[type="submit"],
+#gerar-opcoes button,
+#copy{
   background-color: #81d340 ;
   color: #fff;
   opacity: .8;
@@ -122,4 +124,40 @@ display: none;
 }
 #form-registro  input[type="submit"]:hover{
   opacity: 1;
+}
+
+#gerar-opcoes{
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+#gerar-opcoes .alinha-form{
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#gerar-opcoes label{
+  font-size: .8rem;
+}
+#gerar-opcoes input[type="text"]{
+ max-width: 30px;
+ text-align: center;
+ padding: .2rem;
+}
+
+#gerar-opcoes button{
+background-color: #0097ff;
+display: block ;
+margin: 0 auto;
+max-width: 200px;
+}
+#copy{
+  margin: 1rem auto;
+  background-color: transparent;
+  border: 2px solid #81d340;
+  color: #81d340;
+  padding: .5rem 1rem;
+}
+.hide{
+  display: none;
 }
